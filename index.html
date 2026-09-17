@@ -23,7 +23,7 @@
     <!-- Navigation -->
     <header class="site-header">
         <div class="container">
-            <a href="#home" class="logo">Zhaoqing Wang</a>
+            <a href="#about" class="logo">Zhaoqing Wang</a>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -61,18 +61,17 @@
 
                     <div class="bio-text">
                         <p>
-                            I received my Ph.D. from the <a href="https://www.sydney.edu.au/engineering/our-research/data-science-and-computer-engineering/sydney-artificial-intelligence-centre.html" target="_blank">Sydney AI Centre (SAIC)</a>, The University of Sydney, where I was advised by two brilliant supervisors, Prof. <a href="https://tongliang-liu.github.io/" target="_blank">Tongliang Liu</a> and Prof. <a href="https://mingming-gong.github.io/" target="_blank">Mingming Gong</a>.
+                            I am a <strong>Research Scientist at Luma AI</strong>, with research interests in multimodal understanding and generation. My current work focuses on <strong>large-scale pretraining of world models</strong>, including dataset construction, model architecture, and training infrastructure optimization.
                         </p>
                         <p style="margin-top: 10px;">
-                            I am currently a <strong>Research Scientist at Luma AI</strong>, working on large-scale pretraining of <strong>multi-modal generative models</strong>.
-                            Previously, I was a <strong>Founding Research Scientist at PixVerse</strong>, where I focused on <strong>large-scale pretraining and supervised finetuning of video generative models</strong>.
+                            Previously, I was a <strong>Founding Research Scientist at PixVerse (AISphere)</strong>, where I built the video generation training system from scratch and led <strong>base model training, dataset construction, and reinforcement learning fine-tuning</strong>, driving the development of PixVerse from V2 to V6. On the Artificial Analysis leaderboard, PixVerse V5 ranked <strong>#1 in Image-to-Video and #3 in Text-to-Video</strong> globally, while PixVerse V6 ranked <strong>#2 in Image-to-Video</strong> globally.
                         </p>
                         <p style="margin-top: 10px;">
-                          Before that, I was a research intern at Microsoft Research Asia (supervised by <a href="https://scholar.google.com/citations?user=Q7ICmxMAAAAJ&hl=en" target="_blank">Wenlei Shi</a>), OPPO Research Institute (supervised by <a href="https://scholar.google.com/citations?user=fWDoWsQAAAAJ&hl=en" target="_blank">Yandong Guo</a>), Kuaishou Y-Tech (supervised by <a href="https://scholar.google.com/citations?user=GGPvOP4AAAAJ&hl=zh-CN" target="_blank">Qiang Li</a>) and IDL of Baidu Research (supervised by <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=f2Y5nygAAAAJ&sortby=pubdate" target="_blank">Guodong Guo</a>).
-                      </p>
-                      <p style="margin-top: 10px;">
-                            My research currently focuses on <strong>Multi-modal Understanding and Generation</strong>. Previously, I worked on Visual Representation Learning and Visual Perception.
-                      </p>
+                            I received my <strong>MPhil and Ph.D. degrees</strong> from the <a href="https://www.sydney.edu.au/engineering/our-research/data-science-and-computer-engineering/sydney-artificial-intelligence-centre.html" target="_blank">Sydney AI Centre (SAIC)</a> at the University of Sydney, supervised by Prof. <a href="https://tongliang-liu.github.io/" target="_blank">Tongliang Liu</a> and Prof. <a href="https://mingming-gong.github.io/" target="_blank">Mingming Gong</a>.
+                        </p>
+                        <p style="margin-top: 10px;">
+                            My earlier research mainly focused on <strong>self-supervised learning and visual perception</strong>. I also completed research internships at Microsoft Research Asia with <a href="https://scholar.google.com/citations?user=Q7ICmxMAAAAJ&hl=en" target="_blank">Wenlei Shi</a>, OPPO Research Institute with <a href="https://scholar.google.com/citations?user=fWDoWsQAAAAJ&hl=en" target="_blank">Yandong Guo</a>, Kuaishou Y-Tech with <a href="https://scholar.google.com/citations?user=GGPvOP4AAAAJ&hl=zh-CN" target="_blank">Qiang Li</a>, and IDL of Baidu Research with <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=f2Y5nygAAAAJ&sortby=pubdate" target="_blank">Guodong Guo</a>.
+                        </p>
       </div>
     </div>
   </div>
@@ -84,7 +83,14 @@
                 <h2 class="section-title">News</h2>
                 <div class="news-scroll">
                     <ul class="news-list">
-                        <!-- Placeholders for recent updates -->
+                        <li class="news-item">
+                          <span class="date">2026.07</span>
+                          <span class="content">Our new paper PixWorld is available on <strong>arXiv</strong>.</span>
+                        </li>
+                        <li class="news-item">
+                          <span class="date">2026.06</span>
+                          <span class="content">Two papers (CamVerse, OneWorld) accepted to <strong>ECCV 2026</strong>.</span>
+                        </li>
                         <li class="news-item">
                           <span class="date">2026.03</span>
                           <span class="content">One paper (When Safety Collides) accepted to <strong>CVPR 2026</strong>.</span>
@@ -165,10 +171,58 @@
                 <div class="filter-bar">
                     <button class="filter-btn active" data-filter="all">All</button>
                     <button class="filter-btn" data-filter="cvpr">CVPR</button>
+                    <button class="filter-btn" data-filter="eccv">ECCV</button>
                     <button class="filter-btn" data-filter="iclr">ICLR</button>
+                    <button class="filter-btn" data-filter="neurips">NeurIPS</button>
+                    <button class="filter-btn" data-filter="arxiv">Arxiv</button>
   </div>
 
                 <div class="publications-grid">
+
+                    <!-- PixWorld (arXiv 2026) -->
+                    <article class="paper-card" data-category="selected arxiv">
+                        <div class="paper-thumb">
+                            <img src="images/papers/arXiv2026/pixworld.png" alt="PixWorld: unified 3D scene generation and reconstruction" loading="lazy">
+                        </div>
+                        <div class="paper-info">
+                            <h3>PixWorld: Unifying 3D Scene Generation and Reconstruction in Pixel Space</h3>
+                            <p class="authors">Sensen Gao*, <strong>Zhaoqing Wang*</strong>, Qihang Cao, Dongdong Yu, Changhu Wang, Jia-Wang Bian <span>(* Equal contribution)</span></p>
+                            <p class="venue"><span class="tag">arXiv 2026</span></p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/pdf/2607.05373" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="far fa-file-pdf"></i> PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- OneWorld (ECCV 2026) -->
+                    <article class="paper-card" data-category="selected eccv">
+                        <div class="paper-thumb">
+                            <img src="images/papers/ECCV2026/oneworld.png" alt="OneWorld: 3D scene generation with a unified representation autoencoder" loading="lazy">
+                        </div>
+                        <div class="paper-info">
+                            <h3>OneWorld: Taming Scene Generation with 3D Unified Representation Autoencoder</h3>
+                            <p class="authors">Sensen Gao*, <strong>Zhaoqing Wang*</strong>, Qihang Cao, Dongdong Yu, Changhu Wang, Tongliang Liu, Mingming Gong, Jiawang Bian <span>(* Equal contribution)</span></p>
+                            <p class="venue"><span class="tag">ECCV 2026</span></p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/pdf/2603.16099" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="far fa-file-pdf"></i> PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CamVerse (ECCV 2026) -->
+                    <article class="paper-card" data-category="selected eccv">
+                        <div class="paper-thumb">
+                            <img src="images/papers/ECCV2026/camverse.png" alt="CamVerse: camera-controlled video generation results" loading="lazy">
+                        </div>
+                        <div class="paper-info">
+                            <h3>Taming Camera-Controlled Video Generation with Verifiable Geometry Reward</h3>
+                            <p class="authors"><strong>Zhaoqing Wang</strong>, Xiaobo Xia, Zhuolin Bie, Jinlin Liu, Dongdong Yu, Jia-Wang Bian, Changhu Wang</p>
+                            <p class="venue"><span class="tag">ECCV 2026</span></p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/pdf/2512.02870" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="far fa-file-pdf"></i> PDF</a>
+                            </div>
+                        </div>
+                    </article>
 
                     <!-- When Safety Collides (CVPR 2026) -->
                     <article class="paper-card" data-category="selected cvpr">
@@ -328,10 +382,10 @@
                         </div>
                         <div class="paper-info">
                             <h3>PointShift: Point-wise Shift MLP for Pixel-level Cloud Type Classification</h3>
-                            <p class="authors">Yixiang Huang, <strong>Zhaoqing Wang</strong>, Xin Jiang, Ming Wu, Ming Wu, Chuang Zhang, Chuang Zhang, Jun Guo</p>
+                            <p class="authors">Yixiang Huang, <strong>Zhaoqing Wang</strong>, Xin Jiang, Ming Wu, Chuang Zhang, Jun Guo</p>
                             <p class="venue"><span class="tag">IGARSS 2022</span> <span class="tag highlight">Oral</span></p>
                             <div class="paper-links">
-                                <a href="https://ieeexplore.ieee.org/abstract/document/9554737" target="_blank" class="btn-link"><i class="far fa-file-pdf"></i> PDF</a>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/9883178" target="_blank" class="btn-link"><i class="far fa-file-pdf"></i> PDF</a>
         </div>
       </div>
                     </article>

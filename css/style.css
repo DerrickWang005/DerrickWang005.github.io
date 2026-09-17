@@ -206,6 +206,8 @@ h3 { font-size: 1.5rem; }
 }
 
 .chinese-name {
+    display: inline-block;
+    white-space: nowrap;
     font-weight: 400;
     opacity: 0.8;
 }
@@ -416,6 +418,10 @@ h3 { font-size: 1.5rem; }
         flex-direction: column;
         text-align: center;
     }
+
+    .bio-text {
+        text-align: left;
+    }
     
     .social-links {
         justify-content: center;
@@ -450,4 +456,3 @@ h3 { font-size: 1.5rem; }
         max-width: 100%;
     }
 }
-
